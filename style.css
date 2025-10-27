@@ -1,8 +1,0 @@
-@font-face {
-  font-family: terminal;
-  src: url('aurora-24.ttf'); 
-}
-body {
-	background-color: black;
-	font-family: terminal; 
-}
