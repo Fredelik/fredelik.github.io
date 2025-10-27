@@ -24,7 +24,14 @@
 		background-color: black;
 		box-shadow: 2px 2px rgb(0, 0, 0, 128);
 		color: #4af626;
+		font-size: 16px;
+	}
+	.winbodyalt {
+		background-color: white;
+		box-shadow: 2px 2px rgb(0, 0, 0, 128);
+		color: #2650f6;
 		font-size: 14px;
+		text-align: center;
 	}
 	.winhead {
 		display: flex;
@@ -34,17 +41,46 @@
 		color: black;
 		cursor: grab;
 	}
+	.winheadalt {
+		display: flex;
+		justify-content: space-between;
+		box-shadow: 2px 2px rgb(0, 0, 0, 128);
+		background-color: #2650f6;
+		color: black;
+		cursor: grab;
+	}
 	.content {
 		padding: 10px;
-		margin; 10px;
+		margin: 10px;
+	}
+	img {
+		max-width: 20%;
+		max-heigth: 20%;
+		margin: 5px;
+		filter: brightness(100%);
+		object-fit: contain;
+	}
+	
+	img:hover {
+		filter: brightness(150%);
+	}
+	
+	a{
+		font-size: 20px;
+		color: #2650f6;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		color: #3866f8;
 	}
 </style>
 </head>
 
 <body>
 <div class="win"> 
-<div class="winhead"><div class="content">Welcome!</div> <div class="content">× | ⿻ | –</div></div>
-<div class="winbody"><div class="content">>Booting FL OS... </br> >Loading graphic drivers... </br> >Making an offering to the machine gods... </br>
+<div class="winhead"><div class="content">Bienvenue!</div> <div class="content">× | ⿻ | –</div></div>
+<div class="winbody"><div class="content">>Booting FL OS... </br> >Loading graphic drivers... </br>
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠤⠖⠒⠉⠉⠁⠀⠀⠀⠀⠀⠉⠉⠁⠒⠢⠄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠴⠊⠁⠀⢀⣠⠤⠒⠒⠋⠉⠉⠉⠉⠉⠑⠒⠒⠤⣀⡀⠀⠉⠒⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -69,18 +105,28 @@
 ⠀⠀⠀⠀⠀⠀⣀⡤⠞⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠒⠤⢀⠀
 ⠀⠀⠀⠀⠀⢰⣃⠐⠦⠤⠤⠄⠀⠠⠤⠤⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣵
 ⠀⠀⠀⠀⠀⠀⠛⠿⠶⠦⠶⠶⠶⠶⢶⣂⡤⣤⡉⠉⠀⠐⠒⠒⠒⠒⠒⠒⠒⠒⠀⠀⠉⠉⢉⣀⠀⡉⠉⠉⠀⠐⠒⠤⠤⠀⠀⠄⢀⣿
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠛⠛⠛⠳⠶⠶⠶⠶⠶⠶⠿⠚⠚⠛⠓⠀⠀⠀⠀⠈⠛⠛⠓⠶⣶⣶⣤⣤⣶⡾⠋ </br> >Welcome back [user]!
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠛⠛⠛⠳⠶⠶⠶⠶⠶⠶⠿⠚⠚⠛⠓⠀⠀⠀⠀⠈⠛⠛⠓⠶⣶⣶⣤⣤⣶⡾⠋ 
 </div></div>
 </div>
 
 <div class="win"> 
-<div class="winhead"><div class="content">About me</div> <div class="content">× | ⿻ | –</div></div>
-<div class="winbody"><div class="content">I started making electronic music in 2024</div></div>
+<div class="winheadalt"><div class="content"><img src="hey.png">A propos</div> <div class="content">× | ⿻ | –</div></div>
+<div class="winbodyalt"><div class="content">J'ai 22 ans, je suis français et j'ai commencé la musique vers 2024. </div></div>
 </div>
 
 <div class="win"> 
-<div class="winhead"><div class="content">Links</div> <div class="content">× | ⿻ | –</div></div>
-<div class="winbody"><div class="content">Here's all my socials and stuff </br> >Instagram </br> >Spotify</div></div>
+<div class="winheadalt"><div class="content"><img src="link.png">Liens</div> <div class="content">× | ⿻ | –</div></div>
+<div class="winbodyalt"><div class="content">Vous pouvez trouver ma musique sur Youtube ainsi que sur la plus part des platformes de streaming musical, je poste aussi des trucs sur Insta des fois. 
+</br> <a href="" target="_blank"><img src="insta.png">Instagram</a>
+</br> <a href="" target="_blank"><img src="spot.png">Spotify</a>
+</br> <a href="https://www.youtube.com/@fredelic" target="_blank"><img src="ytb.png">Youtube</a>
+</br> <a href="" target="_blank"><img src="cloud.png">Soundcloud</a>
+</br> <a href="" target="_blank"><img src="deez.png">Deezer</a></div></div>
+</div>
+
+<div class="win"> 
+<div class="winheadalt"><div class="content"><img src="vlc.png">Dernier son</div> <div class="content">× | ⿻ | –</div></div>
+<div class="winbodyalt"><div class="content"></div></div>
 </div>
 </body>
 </html> 
