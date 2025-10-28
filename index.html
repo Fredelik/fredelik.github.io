@@ -16,7 +16,7 @@
 	}
 	.win {
 		background-color: rgb(0,0,0,0);
-		max-width: 800px;
+		max-width: 600px;
 		padding: 20px;
 		margin; 20px;
 	}
@@ -52,17 +52,36 @@
 	.content {
 		padding: 10px;
 		margin: 10px;
+		position: relative;
 	}
-	img {
+	img.ic {
 		max-width: 20%;
 		max-heigth: 20%;
-		margin: 5px;
+		margin: 10px;
 		filter: brightness(100%);
-		object-fit: contain;
+		transition: transform .2s;
 	}
 	
-	img:hover {
-		filter: brightness(150%);
+	img.ic:hover {
+		filter: brightness(125%);
+		transform: scale(1.5);
+	}
+	
+	img {
+		max-width: 70%;
+		max-heigth: 70%;
+		margin: 10px;
+	}
+	
+	div.scroll-container {
+		background-color: rgb(0,0,0,0.1);
+		overflow: auto;
+		white-space: nowrap;
+		padding: 10px;
+	}
+
+	div.scroll-container img {
+		padding: 10px;
 	}
 	
 	a{
@@ -79,7 +98,7 @@
 
 <body>
 <div class="win"> 
-<div class="winhead"><div class="content">Bienvenue!</div> <div class="content">× | ⿻ | –</div></div>
+<div class="winhead"><div class="content">Welcome!</div> <div class="content">× | ⿻ | –</div></div>
 <div class="winbody"><div class="content">>Booting OS... </br> >Loading graphic drivers... </br>
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠤⠖⠒⠉⠉⠁⠀⠀⠀⠀⠀⠉⠉⠁⠒⠢⠄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -110,22 +129,45 @@
 </div>
 
 <div class="win"> 
-<div class="winheadalt"><div class="content"><img src="hey.png">A propos</div> <div class="content">× | ⿻ | –</div></div>
-<div class="winbodyalt"><div class="content">J'ai 22 ans, je suis français et j'ai commencé la musique vers 2024. </div></div>
+<div class="winheadalt"><div class="content"><img src="hey.png" class="ic">About</div> <div class="content">× | ⿻ | –</div></div>
+<div class="winbodyalt"><div class="content">I started producing music around 2024 with LMMS before switching to FL Studio.</br>
+Its hard to tell what genre i produce because i don't really want to stick to a single one, but my biggest source of inspiration are psytrance, acid techno, jungle and breakcore.
+</br>
+<audio controls>
+  <source src="1.wav" type="audio/wav">
+</audio>
+<audio controls>
+  <source src="2.wav" type="audio/wav">
+</audio>
+<audio controls>
+  <source src="3.flac" type="audio/flac">
+</audio>
+<audio controls>
+  <source src="4.wav" type="audio/wav">
+</audio>
+</br>
+Oh also i try to make all my covers and stuff, because "✨graphic design is my passion✨"
+
+ <div class="scroll-container">
+  <img src="1.jpg" alt="Cinque Terre">
+  <img src="2.png" alt="Forest">
+  <img src="3.jpg" alt="Northern Lights">
+  <img src="4.jpg" alt="Mountains">
+</div> </div></div>
 </div>
 
 <div class="win"> 
-<div class="winheadalt"><div class="content"><img src="link.png">Liens</div> <div class="content">× | ⿻ | –</div></div>
-<div class="winbodyalt"><div class="content">Vous pouvez trouver ma musique sur Youtube ainsi que sur la plus part des platformes de streaming musical, je poste aussi des trucs sur Insta des fois. 
-</br> <a href="" target="_blank"><img src="insta.png">Instagram</a>
-</br> <a href="" target="_blank"><img src="spot.png">Spotify</a>
-</br> <a href="https://www.youtube.com/@fredelic" target="_blank"><img src="ytb.png">Youtube</a>
-</br> <a href="" target="_blank"><img src="cloud.png">Soundcloud</a>
-</br> <a href="" target="_blank"><img src="deez.png">Deezer</a></div></div>
+<div class="winheadalt"><div class="content"><img src="link.png" class="ic">Links</div> <div class="content">× | ⿻ | –</div></div>
+<div class="winbodyalt"><div class="content">You can find my stuff on Youtube as well as most streaming platforms, i also post on Insta sometimes.
+</br> <a href="https://www.instagram.com/fredelik_/" target="_blank"><img src="insta.png" class="ic">Instagram</a>
+</br> <a href="https://open.spotify.com/intl-fr/artist/1Is1taXTpAFHq1OOdomNOm" target="_blank"><img src="spot.png" class="ic">Spotify</a>
+</br> <a href="https://www.youtube.com/@fredelic" target="_blank"><img src="ytb.png" class="ic">Youtube</a>
+</br> <a href="https://soundcloud.com/fredelik" target="_blank"><img src="cloud.png" class="ic">Soundcloud</a>
+</br> <a href="https://www.deezer.com/fr/artist/332217511" target="_blank"><img src="deez.png" class="ic">Deezer</a></div></div>
 </div>
 
 <div class="win"> 
-<div class="winheadalt"><div class="content"><img src="vlc.png">Dernier son</div> <div class="content">× | ⿻ | –</div></div>
+<div class="winheadalt"><div class="content"><img src="vlc.png" class="ic">Latest release</div> <div class="content">× | ⿻ | –</div></div>
 <div class="winbodyalt"><div class="content"><iframe width="560" height="315" src="https://www.youtube.com/embed/_U0Pg4vsf1g?si=kk_7x4dRix8Hn3Lh" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></div>
 </div>
 </body>
